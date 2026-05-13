@@ -1,0 +1,2011 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Voices Speech & Language Therapy | Expert SLT for Children & Families</title>
+
+  <meta name="description" content="Little Voices Speech & Language Therapy offers expert, compassionate speech and language therapy for children and families. Book your free consultation today." />
+  <meta name="keywords" content="speech and language therapy, speech therapist, children speech therapy, language development, communication difficulties, SLT, pediatric speech therapy" />
+  <meta name="author" content="Little Voices Speech & Language Therapy" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://littlevoices-slt.com/" />
+
+  <meta property="og:title" content="Little Voices Speech & Language Therapy" />
+  <meta property="og:description" content="Expert, compassionate speech and language therapy for children and families. Every child deserves to find their voice." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://littlevoices-slt.com/" />
+  <meta property="og:image" content="WhatsApp Image 2026-02-17 at 17.21.42-5.jpeg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Little Voices Speech & Language Therapy" />
+  <meta name="twitter:description" content="Expert, compassionate speech and language therapy for children and families." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Little Voices Speech & Language Therapy",
+    "description": "Expert speech and language therapy for children and families",
+    "url": "https://littlevoices-slt.com",
+    "telephone": "+44-1234-567890",
+    "email": "hello@littlevoices-slt.com",
+    "medicalSpecialty": "Speech-Language Pathology"
+  }
+  </script>
+<link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@botpress/webchat@latest/dist/webchat.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@botpress/webchat@latest/dist/webchat.min.css">
+
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sage:       #7A9E7E;
+      --sage-light: #B5CEAB;
+      --sage-pale:  #EEF4EC;
+      --terracotta: #C97B5A;
+      --terra-pale: #FDF4EF;
+      --cream:      #FAF8F4;
+      --charcoal:   #2C2C2C;
+      --muted:      #6B6B6B;
+      --white:      #FFFFFF;
+      --border:     rgba(44,44,44,0.10);
+      --shadow:     0 8px 40px rgba(44,44,44,0.10);
+      --shadow-lg:  0 24px 80px rgba(44,44,44,0.14);
+      --radius:     18px;
+      --radius-lg:  28px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 6vw;
+      background: rgba(250,248,244,0.88);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow .3s;
+    }
+    nav.scrolled { box-shadow: 0 4px 30px rgba(44,44,44,0.08); }
+
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--charcoal);
+    }
+    .nav-logo-icon {
+      width: 42px; height: 42px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--sage), var(--sage-light));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; color: white;
+      flex-shrink: 0;
+    }
+    .nav-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; }
+    .nav-logo-sub { font-size: 0.65rem; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: block; margin-top: -2px; }
+
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--charcoal); font-size: .9rem; font-weight: 500; opacity: .75; transition: opacity .2s; }
+    .nav-links a:hover { opacity: 1; }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--terracotta); color: white;
+      padding: 10px 22px; border-radius: 50px;
+      font-family: 'DM Sans', sans-serif; font-size: .9rem; font-weight: 600;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: transform .2s, box-shadow .2s, background .2s;
+      box-shadow: 0 4px 18px rgba(201,123,90,.30);
+      white-space: nowrap;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,123,90,.40); background: #b86d4d; }
+
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--sage);
+      padding: 10px 22px; border-radius: 50px;
+      font-family: 'DM Sans', sans-serif; font-size: .9rem; font-weight: 600;
+      text-decoration: none; border: 2px solid var(--sage);
+      cursor: pointer; transition: all .2s;
+      white-space: nowrap;
+    }
+    .btn-outline:hover { background: var(--sage); color: white; }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; border: none; background: none; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--charcoal); border-radius: 2px; transition: all .3s; display: block; }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 120px 6vw 80px;
+      gap: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg-blob {
+      position: absolute; top: -10%; right: -5%;
+      width: 55vw; height: 55vw; max-width: 700px; max-height: 700px;
+      background: radial-gradient(ellipse at 60% 40%, #B5CEAB55 0%, #EEF4EC88 50%, transparent 75%);
+      border-radius: 50%;
+      z-index: 0;
+    }
+    .hero-bg-dots {
+      position: absolute; bottom: 5%; left: 5%;
+      width: 180px; height: 180px;
+      background-image: radial-gradient(var(--sage-light) 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      opacity: .45;
+      z-index: 0;
+    }
+
+    .hero-content { position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--sage-pale); color: var(--sage);
+      padding: 7px 16px; border-radius: 50px;
+      font-size: .8rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .hero-badge i { font-size: 14px; }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 5vw, 4rem);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--charcoal);
+      margin-bottom: 22px;
+    }
+    .hero-title em { color: var(--sage); font-style: italic; }
+    .hero-title span.accent { color: var(--terracotta); }
+
+    .hero-desc {
+      font-size: 1.05rem; color: var(--muted); line-height: 1.75;
+      max-width: 480px; margin-bottom: 36px;
+    }
+
+    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 44px; }
+
+    .hero-trust {
+      display: flex; align-items: center; gap: 16px;
+      padding: 14px 20px; background: white;
+      border-radius: var(--radius); border: 1px solid var(--border);
+      width: fit-content; box-shadow: var(--shadow);
+    }
+    .trust-avatars { display: flex; }
+    .trust-avatars img {
+      width: 32px; height: 32px; border-radius: 50%;
+      border: 2px solid white; margin-left: -8px; object-fit: cover;
+    }
+    .trust-avatars img:first-child { margin-left: 0; }
+    .trust-text { font-size: .85rem; }
+    .trust-text strong { display: block; font-weight: 600; font-size: .9rem; }
+    .trust-text span { color: var(--muted); }
+    .stars { color: #F5A623; font-size: .85rem; letter-spacing: 1px; }
+
+    .hero-image { position: relative; z-index: 1; }
+    .hero-image-wrap {
+      position: relative; border-radius: var(--radius-lg); overflow: hidden;
+      aspect-ratio: 4/5; box-shadow: var(--shadow-lg);
+    }
+    .hero-image-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .6s ease;
+    }
+    .hero-image-wrap:hover img { transform: scale(1.03); }
+    .hero-image-card {
+      position: absolute; bottom: 28px; left: -28px;
+      background: white; border-radius: var(--radius);
+      padding: 14px 18px;
+      box-shadow: var(--shadow-lg);
+      display: flex; align-items: center; gap: 12px;
+      min-width: 200px;
+    }
+    .hero-card-icon {
+      width: 42px; height: 42px; border-radius: 12px;
+      background: var(--terra-pale);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--terracotta); font-size: 20px; flex-shrink: 0;
+    }
+    .hero-card-text strong { font-size: .9rem; font-weight: 600; display: block; }
+    .hero-card-text span { font-size: .8rem; color: var(--muted); }
+
+    .hero-image-card2 {
+      position: absolute; top: 28px; right: -22px;
+      background: var(--sage); color: white; border-radius: var(--radius);
+      padding: 12px 16px; box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .hero-image-card2 .num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; line-height: 1; }
+    .hero-image-card2 .lbl { font-size: .7rem; opacity: .85; margin-top: 2px; }
+
+    /* ─── SECTION WRAPPERS ─── */
+    section { padding: 90px 6vw; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--terracotta); margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600; line-height: 1.2;
+      color: var(--charcoal); margin-bottom: 18px;
+    }
+    .section-desc { font-size: 1.05rem; color: var(--muted); max-width: 560px; line-height: 1.75; }
+    .text-center { text-align: center; }
+    .text-center .section-desc { margin: 0 auto; }
+
+    /* ─── ABOUT ─── */
+    #about { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .about-images { position: relative; }
+    .about-img-main {
+      border-radius: var(--radius-lg); overflow: hidden;
+      aspect-ratio: 3/4; box-shadow: var(--shadow-lg);
+    }
+    .about-img-main img { width: 100%; height: 100%; object-fit: cover; }
+    .about-img-secondary {
+      position: absolute; bottom: -30px; right: -30px;
+      width: 55%; border-radius: var(--radius);
+      overflow: hidden; border: 6px solid white;
+      box-shadow: var(--shadow-lg); aspect-ratio: 1/1;
+    }
+    .about-img-secondary img { width: 100%; height: 100%; object-fit: cover; }
+    .about-experience-badge {
+      position: absolute; top: 30px; right: -20px;
+      background: var(--terracotta); color: white;
+      border-radius: var(--radius); padding: 16px 20px;
+      text-align: center; box-shadow: var(--shadow);
+    }
+    .about-experience-badge .num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 700; line-height: 1; }
+    .about-experience-badge .lbl { font-size: .7rem; opacity: .9; margin-top: 2px; }
+
+    .about-content { padding-left: 10px; }
+    .about-list { list-style: none; margin: 28px 0 36px; display: flex; flex-direction: column; gap: 16px; }
+    .about-list li {
+      display: flex; align-items: flex-start; gap: 14px;
+      font-size: .95rem; color: var(--charcoal);
+    }
+    .about-list li i { color: var(--sage); font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+    .about-qualifications {
+      display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px;
+    }
+    .qual-badge {
+      background: var(--sage-pale); color: var(--sage);
+      padding: 7px 14px; border-radius: 50px;
+      font-size: .8rem; font-weight: 600;
+      display: flex; align-items: center; gap: 6px;
+    }
+
+    /* ─── SERVICES ─── */
+    #services { background: var(--cream); }
+    .services-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 60px; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+    .service-card {
+      background: white; border-radius: var(--radius-lg);
+      padding: 36px 30px; border: 1px solid var(--border);
+      transition: transform .3s, box-shadow .3s;
+      position: relative; overflow: hidden;
+    }
+    .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+    .service-card.featured { background: var(--sage); color: white; }
+    .service-card.featured .service-icon { background: rgba(255,255,255,.2); color: white; }
+    .service-card.featured .service-title { color: white; }
+    .service-card.featured .service-desc { color: rgba(255,255,255,.85); }
+    .service-card.featured .service-tag { background: rgba(255,255,255,.2); color: white; }
+
+    .service-icon {
+      width: 56px; height: 56px; border-radius: 14px;
+      background: var(--sage-pale); color: var(--sage);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px; margin-bottom: 22px;
+    }
+    .service-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 12px; }
+    .service-desc { font-size: .9rem; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
+    .service-card.featured .service-desc { color: rgba(255,255,255,.8); }
+    .service-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
+    .service-tag {
+      background: var(--sage-pale); color: var(--sage);
+      font-size: .75rem; font-weight: 600; padding: 4px 12px; border-radius: 50px;
+    }
+    .service-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--sage); font-size: .875rem; font-weight: 600;
+      text-decoration: none; transition: gap .2s;
+    }
+    .service-card.featured .service-link { color: white; }
+    .service-link:hover { gap: 10px; }
+
+    /* ─── PROCESS ─── */
+    #process { background: var(--sage-pale); }
+    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 60px; }
+    .process-step { text-align: center; position: relative; }
+    .process-step:not(:last-child)::after {
+      content: ''; position: absolute; top: 36px; left: calc(50% + 44px);
+      width: calc(100% - 88px); height: 2px;
+      background: linear-gradient(90deg, var(--sage-light), transparent);
+    }
+    .process-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: white; margin: 0 auto 20px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 700;
+      color: var(--sage); box-shadow: var(--shadow);
+      border: 2px solid var(--sage-light);
+    }
+    .process-icon-wrap {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--sage); margin: 0 auto 20px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; color: white; box-shadow: var(--shadow);
+    }
+    .process-step-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; margin-bottom: 10px; }
+    .process-step-desc { font-size: .875rem; color: var(--muted); line-height: 1.65; }
+
+    /* ─── TESTIMONIALS ─── */
+    #testimonials { background: var(--white); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 50px; }
+
+    .testimonial-card {
+      background: var(--cream); border-radius: var(--radius-lg);
+      padding: 32px 28px; border: 1px solid var(--border);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .testimonial-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .testimonial-card.featured { background: var(--charcoal); color: white; grid-column: span 1; }
+
+    .testimonial-stars { color: #F5A623; font-size: 1rem; letter-spacing: 2px; margin-bottom: 18px; }
+    .testimonial-text { font-size: .95rem; line-height: 1.75; margin-bottom: 24px; }
+    .testimonial-card.featured .testimonial-text { color: rgba(255,255,255,.85); }
+    .testimonial-quote-icon { font-size: 2rem; color: var(--sage-light); margin-bottom: 12px; }
+    .testimonial-card.featured .testimonial-quote-icon { color: rgba(255,255,255,.2); }
+
+    .testimonial-author { display: flex; align-items: center; gap: 12px; }
+    .testimonial-avatar {
+      width: 44px; height: 44px; border-radius: 50%; overflow: hidden;
+      background: var(--sage-light); flex-shrink: 0;
+    }
+    .testimonial-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .testimonial-name { font-weight: 600; font-size: .9rem; }
+    .testimonial-card.featured .testimonial-name { color: white; }
+    .testimonial-role { font-size: .8rem; color: var(--muted); }
+    .testimonial-card.featured .testimonial-role { color: rgba(255,255,255,.6); }
+
+    /* ─── BLOG/ARTICLES ─── */
+    #articles { background: var(--cream); }
+    .articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 50px; }
+
+    .article-card {
+      background: white; border-radius: var(--radius-lg); overflow: hidden;
+      border: 1px solid var(--border); transition: transform .3s, box-shadow .3s;
+    }
+    .article-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .article-img { aspect-ratio: 16/10; overflow: hidden; }
+    .article-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+    .article-card:hover .article-img img { transform: scale(1.05); }
+    .article-body { padding: 24px; }
+    .article-category {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--sage-pale); color: var(--sage);
+      font-size: .75rem; font-weight: 600; padding: 4px 12px; border-radius: 50px;
+      margin-bottom: 14px;
+    }
+    .article-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; line-height: 1.35; margin-bottom: 10px; }
+    .article-excerpt { font-size: .875rem; color: var(--muted); line-height: 1.65; margin-bottom: 20px; }
+    .article-meta { display: flex; align-items: center; justify-content: space-between; }
+    .article-date { display: flex; align-items: center; gap: 6px; font-size: .8rem; color: var(--muted); }
+    .article-read-more {
+      display: flex; align-items: center; gap: 4px;
+      color: var(--sage); font-size: .8rem; font-weight: 600;
+      text-decoration: none; transition: gap .2s;
+    }
+    .article-read-more:hover { gap: 8px; }
+
+    /* ─── FAQ ─── */
+    #faq { background: var(--white); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 50px; }
+    .faq-item {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 24px; background: none; border: none; cursor: pointer;
+      font-family: 'DM Sans', sans-serif; font-size: .95rem; font-weight: 600;
+      color: var(--charcoal); text-align: left; gap: 16px;
+      transition: background .2s;
+    }
+    .faq-question:hover { background: var(--cream); }
+    .faq-question i { flex-shrink: 0; color: var(--sage); font-size: 20px; transition: transform .3s; }
+    .faq-item.open .faq-question i { transform: rotate(180deg); }
+    .faq-answer {
+      padding: 0 24px; max-height: 0; overflow: hidden;
+      font-size: .9rem; color: var(--muted); line-height: 1.75;
+      transition: max-height .4s ease, padding .3s;
+    }
+    .faq-item.open .faq-answer { max-height: 300px; padding: 0 24px 20px; }
+
+    /* ─── CONTACT ─── */
+    #contact { background: var(--sage); }
+    .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+
+    .contact-info { color: white; }
+    .contact-info .section-label { color: rgba(255,255,255,.7); }
+    .contact-info .section-title { color: white; }
+    .contact-info .section-desc { color: rgba(255,255,255,.8); max-width: 100%; }
+
+    .contact-details { margin-top: 40px; display: flex; flex-direction: column; gap: 22px; }
+    .contact-item { display: flex; align-items: center; gap: 16px; }
+    .contact-item-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: rgba(255,255,255,.15); backdrop-filter: blur(10px);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; color: white; flex-shrink: 0;
+    }
+    .contact-item-text strong { font-size: .95rem; font-weight: 600; display: block; color: white; }
+    .contact-item-text span { font-size: .875rem; color: rgba(255,255,255,.75); }
+    .contact-item-text a { color: rgba(255,255,255,.75); text-decoration: none; }
+    .contact-item-text a:hover { color: white; }
+
+    .contact-form-wrap {
+      background: white; border-radius: var(--radius-lg); padding: 44px 40px;
+      box-shadow: 0 24px 80px rgba(0,0,0,.18);
+    }
+    .form-title { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin-bottom: 28px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: 7px; color: var(--charcoal); }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; padding: 12px 16px;
+      border: 1.5px solid var(--border); border-radius: 12px;
+      font-family: 'DM Sans', sans-serif; font-size: .9rem; color: var(--charcoal);
+      background: var(--cream); outline: none;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--sage);
+      box-shadow: 0 0 0 3px rgba(122,158,126,.15);
+    }
+    .form-textarea { resize: vertical; min-height: 110px; }
+    .form-submit {
+      width: 100%; padding: 14px 28px;
+      background: var(--terracotta); color: white;
+      border: none; border-radius: 50px; cursor: pointer;
+      font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: background .2s, transform .2s, box-shadow .2s;
+      box-shadow: 0 4px 18px rgba(201,123,90,.30);
+      margin-top: 8px;
+    }
+    .form-submit:hover { background: #b86d4d; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,123,90,.40); }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--charcoal); color: rgba(255,255,255,.7); padding: 60px 6vw 36px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand { }
+    .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+    .footer-logo-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: var(--sage); display: flex; align-items: center; justify-content: center;
+      font-size: 18px; color: white;
+    }
+    .footer-logo-name { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: white; }
+    .footer-desc { font-size: .875rem; line-height: 1.7; max-width: 260px; }
+    .footer-socials { display: flex; gap: 10px; margin-top: 22px; }
+    .footer-social {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.6); font-size: 18px;
+      text-decoration: none; transition: background .2s, color .2s;
+    }
+    .footer-social:hover { background: var(--sage); color: white; }
+
+    .footer-col-title { font-size: .85rem; font-weight: 700; color: white; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { color: rgba(255,255,255,.6); text-decoration: none; font-size: .875rem; transition: color .2s; }
+    .footer-links a:hover { color: white; }
+
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-copy { font-size: .8rem; }
+    .footer-bottom-links { display: flex; gap: 20px; }
+    .footer-bottom-links a { color: rgba(255,255,255,.5); text-decoration: none; font-size: .8rem; transition: color .2s; }
+    .footer-bottom-links a:hover { color: white; }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ─── PERFORMANCE OPTIMIZATIONS ─── */
+    .lazy-load {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .lazy-load.loaded {
+      opacity: 1;
+    }
+    .smooth-scroll {
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    /* ─── INTERACTIVE ELEMENTS ─── */
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .slide-in-left {
+      animation: slideInLeft 0.6s ease-out;
+    }
+    @keyframes slideInLeft {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    .counter {
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
+    }
+
+    /* ─── ENHANCEMENTS ─── */
+    .gradient-text {
+      background: linear-gradient(135deg, var(--sage), var(--terracotta));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(44,44,44,0.15);
+    }
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .scroll-indicator {
+      position: absolute; bottom: 30px; left: 50%;
+      transform: translateX(-50%);
+      width: 30px; height: 50px;
+      border: 2px solid var(--sage);
+      border-radius: 25px;
+      opacity: 0.7;
+    }
+    .scroll-indicator::before {
+      content: '';
+      position: absolute; top: 8px; left: 50%;
+      transform: translateX(-50%);
+      width: 4px; height: 8px;
+      background: var(--sage);
+      border-radius: 2px;
+      animation: scroll 2s infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(-50%) translateY(0); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateX(-50%) translateY(12px); opacity: 0; }
+    }
+
+    /* ─── CHATBOT STYLES ─── */
+    .chatbot-container {
+      position: fixed; bottom: 20px; right: 20px; z-index: 1000;
+    }
+    .chatbot-toggle {
+      width: 60px; height: 60px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--sage), var(--terracotta));
+      border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(122,158,126,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: white; font-size: 24px;
+    }
+    .chatbot-toggle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(122,158,126,0.5);
+    }
+    .chatbot-window {
+      position: absolute; bottom: 80px; right: 0;
+      width: 380px; height: 500px; max-height: 70vh;
+      background: white; border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      display: none; flex-direction: column;
+      overflow: hidden; border: 1px solid var(--border);
+    }
+    .chatbot-window.active {
+      display: flex;
+    }
+    .chatbot-header {
+      background: linear-gradient(135deg, var(--sage), var(--terracotta));
+      color: white; padding: 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .chatbot-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-weight: 600;
+    }
+    .chatbot-close {
+      background: none; border: none; color: white;
+      font-size: 24px; cursor: pointer; opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    .chatbot-close:hover { opacity: 1; }
+    .chatbot-messages {
+      flex: 1; padding: 20px; overflow-y: auto;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .chat-message {
+      max-width: 80%; padding: 12px 16px;
+      border-radius: 18px; font-size: 0.9rem;
+      line-height: 1.4; word-wrap: break-word;
+    }
+    .bot-message {
+      background: var(--sage-pale); color: var(--charcoal);
+      align-self: flex-start; border-bottom-left-radius: 4px;
+    }
+    .user-message {
+      background: var(--sage); color: white;
+      align-self: flex-end; border-bottom-right-radius: 4px;
+    }
+    .chatbot-input-container {
+      padding: 15px; border-top: 1px solid var(--border);
+      display: flex; gap: 10px;
+    }
+    .chatbot-input {
+      flex: 1; padding: 10px 15px;
+      border: 1px solid var(--border); border-radius: 25px;
+      font-size: 0.9rem; outline: none;
+      transition: border-color 0.2s;
+    }
+    .chatbot-input:focus {
+      border-color: var(--sage);
+    }
+    .chatbot-send {
+      background: var(--sage); color: white;
+      border: none; border-radius: 50%;
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: background 0.2s;
+      flex-shrink: 0;
+    }
+    .chatbot-send:hover {
+      background: var(--terracotta);
+    }
+    .quick-replies {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-top: 10px; margin-bottom: 10px;
+    }
+    .quick-reply {
+      background: white; border: 1px solid var(--sage);
+      color: var(--sage); padding: 6px 12px;
+      border-radius: 15px; font-size: 0.8rem;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .quick-reply:hover {
+      background: var(--sage); color: white;
+    }
+
+    /* ─── MOBILE NAV ─── */
+    .mobile-menu {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99;
+      background: var(--cream); display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 32px;
+      transform: translateX(100%); transition: transform .35s ease;
+    }
+    .mobile-menu.open { transform: none; }
+    .mobile-menu a { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600; color: var(--charcoal); text-decoration: none; }
+    .mobile-menu .close-btn { position: absolute; top: 24px; right: 6vw; font-size: 2rem; cursor: pointer; color: var(--charcoal); border: none; background: none; }
+
+    /* ══════════════════════════════════════════════
+       RESPONSIVE BREAKPOINTS — FULLY OPTIMISED
+       ══════════════════════════════════════════════ */
+
+    /* ─── LARGE DESKTOPS (1440px+) ─── */
+    @media (min-width: 1440px) {
+      nav { padding: 20px 8vw; }
+      section { padding: 110px 8vw; }
+      #hero { padding: 140px 8vw 100px; gap: 80px; }
+      footer { padding: 70px 8vw 40px; }
+    }
+
+    /* ─── STANDARD DESKTOP / LARGE TABLET (1025px–1280px) ─── */
+    @media (max-width: 1280px) {
+      .hero-image-card { left: -14px; min-width: 180px; }
+      .hero-image-card2 { right: -10px; }
+      .about-img-secondary { right: -16px; }
+      .about-experience-badge { right: -10px; }
+    }
+
+    /* ─── TABLET LANDSCAPE (769px–1024px) ─── */
+    @media (max-width: 1024px) {
+      nav { padding: 16px 4vw; }
+      section { padding: 70px 5vw; }
+
+      #hero { 
+        grid-template-columns: 1fr 1fr; 
+        padding: 110px 5vw 60px; 
+        gap: 40px; 
+      }
+      .hero-title { font-size: clamp(2.2rem, 4vw, 3rem); }
+      .hero-image-card { left: -12px; padding: 12px 14px; min-width: 170px; }
+      .hero-image-card2 { right: -10px; }
+
+      .about-grid { gap: 50px; }
+      .about-img-secondary { right: -16px; }
+      .about-experience-badge { right: -10px; }
+      .about-content { padding-left: 0; }
+
+      .services-grid { grid-template-columns: 1fr 1fr; }
+
+      .process-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .process-step:nth-child(2)::after,
+      .process-step:nth-child(4)::after { display: none; }
+      .process-step:nth-child(1)::after,
+      .process-step:nth-child(3)::after { display: none; }
+
+      .testimonials-grid { grid-template-columns: 1fr; }
+
+      .why-grid { grid-template-columns: 1fr 1fr !important; }
+
+      .success-stats { grid-template-columns: repeat(2, 1fr) !important; }
+      .success-cases { grid-template-columns: 1fr 1fr !important; }
+
+      .articles-grid { grid-template-columns: 1fr 1fr; }
+
+      .faq-grid { grid-template-columns: 1fr; }
+
+      .contact-inner { gap: 50px; }
+      .contact-form-wrap { padding: 36px 30px; }
+
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+
+      .trust-badges { grid-template-columns: repeat(2, 1fr) !important; }
+
+      .chatbot-window { width: 340px; right: -10px; }
+    }
+
+    /* ─── TABLET PORTRAIT (576px–768px) ─── */
+    @media (max-width: 768px) {
+      nav { padding: 14px 5vw; }
+      section { padding: 60px 5vw; }
+
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+
+      /* Hero — single column, image hidden */
+      #hero {
+        grid-template-columns: 1fr;
+        padding: 96px 5vw 60px;
+        gap: 0;
+        min-height: auto;
+      }
+      .hero-image { display: none; }
+      .hero-title { font-size: clamp(2.4rem, 7vw, 3rem); }
+      .hero-desc { font-size: 1rem; max-width: 100%; }
+      .hero-cta { gap: 12px; }
+      .hero-trust { width: 100%; }
+      .scroll-indicator { display: none; }
+
+      /* About */
+      .about-grid { grid-template-columns: 1fr; gap: 0; }
+      .about-images { display: none; }
+      .about-content { padding-left: 0; }
+
+      /* Services */
+      .services-intro { grid-template-columns: 1fr; gap: 16px; margin-bottom: 36px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card { padding: 28px 24px; }
+
+      /* Process */
+      .process-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+      .process-step::after { display: none !important; }
+
+      /* Why choose */
+      .why-grid { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
+
+      /* Success */
+      .success-stats { grid-template-columns: repeat(2, 1fr) !important; gap: 16px !important; }
+      .success-cases { grid-template-columns: 1fr !important; }
+
+      /* Testimonials */
+      .testimonials-grid { grid-template-columns: 1fr; }
+
+      /* Articles */
+      .articles-grid { grid-template-columns: 1fr; }
+
+      /* FAQ */
+      .faq-grid { grid-template-columns: 1fr; }
+      .faq-question { font-size: .9rem; padding: 16px 18px; }
+
+      /* Contact */
+      .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+      .contact-form-wrap { padding: 28px 22px; border-radius: var(--radius); }
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+
+      /* Footer */
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; text-align: center; gap: 16px; }
+      .footer-bottom-links { flex-wrap: wrap; justify-content: center; }
+      .footer-desc { max-width: 100%; }
+
+      /* Trust badges */
+      .trust-badges { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+
+      /* Chatbot */
+      .chatbot-window {
+        width: calc(100vw - 30px);
+        height: 420px;
+        right: -15px;
+        bottom: 70px;
+      }
+      .chatbot-container { bottom: 15px; right: 15px; }
+      .chatbot-toggle { width: 52px; height: 52px; font-size: 22px; }
+    }
+
+    /* ─── MOBILE (375px–575px) ─── */
+    @media (max-width: 575px) {
+      nav { padding: 12px 4vw; }
+      section { padding: 50px 4vw; }
+
+      .nav-logo-text { font-size: 1.1rem; }
+      .nav-logo-sub { display: none; }
+
+      #hero { padding: 88px 4vw 50px; }
+      .hero-badge { font-size: .72rem; padding: 6px 12px; }
+      .hero-title { font-size: clamp(2rem, 8vw, 2.6rem); }
+      .hero-desc { font-size: .95rem; }
+      .hero-cta { flex-direction: column; align-items: flex-start; }
+      .hero-cta .btn-primary,
+      .hero-cta .btn-outline { width: 100%; justify-content: center; }
+      .hero-trust { flex-direction: column; align-items: flex-start; gap: 10px; }
+
+      .section-title { font-size: clamp(1.7rem, 7vw, 2.2rem); }
+      .section-desc { font-size: .95rem; }
+
+      /* Process — single column on small mobile */
+      .process-grid { grid-template-columns: 1fr; gap: 32px; }
+
+      /* Why choose — single column */
+      .why-grid { grid-template-columns: 1fr !important; }
+
+      /* Success stats — single column */
+      .success-stats { grid-template-columns: 1fr !important; }
+
+      /* Service cards */
+      .service-card { padding: 24px 20px; }
+
+      /* Contact form */
+      .contact-form-wrap { padding: 24px 16px; }
+      .form-title { font-size: 1.4rem; }
+      .form-input, .form-select, .form-textarea { padding: 11px 14px; font-size: .875rem; }
+      .form-submit { font-size: .9rem; padding: 13px 20px; }
+
+      /* Footer — single column */
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom-links { gap: 12px; }
+
+      /* Trust badges — single column */
+      .trust-badges { grid-template-columns: 1fr !important; }
+
+      /* Chatbot */
+      .chatbot-window {
+        width: calc(100vw - 20px);
+        right: -10px;
+        height: 380px;
+      }
+      .chatbot-container { bottom: 12px; right: 12px; }
+      .chatbot-toggle { width: 48px; height: 48px; font-size: 20px; }
+
+      /* Back-to-top button */
+      #backTop { bottom: 16px; right: 70px; width: 42px; height: 42px; font-size: 18px; }
+    }
+
+    /* ─── SMALL MOBILE (max 374px) ─── */
+    @media (max-width: 374px) {
+      nav { padding: 10px 4vw; }
+      section { padding: 44px 4vw; }
+
+      .nav-logo-icon { width: 34px; height: 34px; font-size: 16px; }
+      .nav-logo-text { font-size: 1rem; }
+
+      #hero { padding: 80px 4vw 44px; }
+      .hero-title { font-size: clamp(1.8rem, 9vw, 2.2rem); }
+
+      .section-title { font-size: clamp(1.5rem, 8vw, 1.9rem); }
+
+      .about-list li { font-size: .88rem; }
+      .qual-badge { font-size: .72rem; padding: 5px 10px; }
+
+      .service-card { padding: 20px 16px; }
+      .service-title { font-size: 1.2rem; }
+
+      .testimonial-card { padding: 24px 18px; }
+
+      .contact-form-wrap { padding: 20px 14px; }
+      .form-title { font-size: 1.25rem; }
+
+      .footer-grid { gap: 24px; }
+      .footer-col-title { margin-bottom: 12px; }
+      .footer-bottom-links { gap: 10px; font-size: .75rem; }
+
+      #backTop { bottom: 14px; right: 64px; width: 38px; height: 38px; font-size: 16px; }
+    }
+
+    /* ─── LANDSCAPE MOBILE (short viewport) ─── */
+    @media (max-width: 768px) and (orientation: landscape) and (max-height: 500px) {
+      #hero { min-height: auto; padding-top: 80px; padding-bottom: 40px; }
+      .hero-title { font-size: clamp(1.8rem, 5vw, 2.4rem); }
+      section { padding: 44px 5vw; }
+      nav { padding: 10px 5vw; }
+      .chatbot-window { height: 300px; max-height: 60vh; }
+    }
+
+    /* ─── PRINT ─── */
+    @media print {
+      nav, .chatbot-container, #backTop, .scroll-indicator,
+      .mobile-menu, footer .footer-socials { display: none !important; }
+      section { padding: 30px 5%; break-inside: avoid; }
+      body { font-size: 12pt; color: #000; background: #fff; }
+      .hero-image { display: block !important; }
+      .about-images { display: block !important; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#process" onclick="toggleMenu()">How It Works</a>
+  <a href="#articles" onclick="toggleMenu()">Resources</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-icon"><i class="ph ph-chats-circle"></i></div>
+    <div>
+      <span class="nav-logo-text">Little Voices</span>
+      <span class="nav-logo-sub">Speech & Language Therapy</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">How It Works</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#articles">Resources</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#contact" class="btn-primary nav-cta"><i class="ph ph-phone"></i> Book Free Consultation</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg-blob"></div>
+  <div class="hero-bg-dots"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge reveal">
+      <i class="ph ph-seal-check"></i>
+      HCPC Registered &amp; Royal College of SLTs Member
+    </div>
+    <h1 class="hero-title reveal">
+      Helping Every Child<br>
+      Find Their <em class="gradient-text">Voice</em> &amp;<br>
+      <span class="accent">Flourish</span>
+    </h1>
+    <p class="hero-desc reveal">
+      Specialist speech and language therapy for children aged 0–18. Warm, evidence-based, and tailored to every little one — delivered in-clinic, at home, or online.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#contact" class="btn-primary pulse"><i class="ph ph-calendar-check"></i> Book Free Consultation</a>
+      <a href="#services" class="btn-outline"><i class="ph ph-magnifying-glass"></i> Our Services</a>
+    </div>
+    <div class="hero-trust reveal">
+      <div class="trust-avatars">
+        <img src="/images/Image 2026-02-17 at 17.21.42.jpeg" alt="Parent" />
+        <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-2.jpeg" alt="Parent" />
+        <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-4.jpeg" alt="Parent" />
+      </div>
+      <div class="trust-text">
+        <strong>200+ Families Helped</strong>
+        <div class="stars">★★★★★</div>
+        <span>Rated 5.0 on Google</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-image reveal hover-lift">
+    <div class="hero-image-wrap">
+      <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-5.jpeg" alt="Speech therapist working with a child" loading="lazy" />
+    </div>
+    <div class="hero-image-card">
+      <div class="hero-card-icon"><i class="ph ph-heart"></i></div>
+      <div class="hero-card-text">
+        <strong>Child-Led Therapy</strong>
+        <span>Play-based &amp; fun sessions</span>
+      </div>
+    </div>
+    <div class="hero-image-card2">
+      <div class="num">12+</div>
+      <div class="lbl">Years<br>Experience</div>
+    </div>
+  </div>
+  <div class="scroll-indicator"></div>
+</section>
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-images reveal">
+      <div class="about-img-main">
+        <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-6.jpeg" alt="Therapist with child" loading="lazy" />
+      </div>
+      <div class="about-img-secondary">
+        <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-5.jpeg" alt="Child smiling" loading="lazy" />
+      </div>
+      <div class="about-experience-badge">
+        <div class="num">500+</div>
+        <div class="lbl">Children<br>Supported</div>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <div class="section-label reveal"><i class="ph ph-user-circle"></i> About Us</div>
+      <h2 class="section-title reveal">Passionate About<br>Communication &amp; Connection</h2>
+      <p class="section-desc reveal" style="margin-bottom:0">
+        I'm Sarah Mitchell, a specialist Speech and Language Therapist with over 12 years' experience supporting children with communication and swallowing difficulties. I believe every child has a story to tell — and I'm here to help them tell it.
+      </p>
+
+      <ul class="about-list reveal">
+        <li><i class="ph ph-check-circle-fill"></i><span>Fully qualified SLT, registered with the Health and Care Professions Council (HCPC)</span></li>
+        <li><i class="ph ph-check-circle-fill"></i><span>Member of the Royal College of Speech and Language Therapists (RCSLT)</span></li>
+        <li><i class="ph ph-check-circle-fill"></i><span>Specialist in children's speech, language, communication &amp; feeding difficulties</span></li>
+        <li><i class="ph ph-check-circle-fill"></i><span>Warm, family-centred approach with evidence-based practice at the core</span></li>
+        <li><i class="ph ph-check-circle-fill"></i><span>Sessions available in-clinic, at your home, school, or via secure video call</span></li>
+      </ul>
+
+      <div class="about-qualifications reveal">
+        <span class="qual-badge"><i class="ph ph-certificate"></i> BSc (Hons) SLT</span>
+        <span class="qual-badge"><i class="ph ph-certificate"></i> MSc Language Dev.</span>
+        <span class="qual-badge"><i class="ph ph-shield-check"></i> DBS Checked</span>
+        <span class="qual-badge"><i class="ph ph-first-aid"></i> Paediatric First Aid</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="services-intro">
+    <div>
+      <div class="section-label reveal"><i class="ph ph-squares-four"></i> What We Offer</div>
+      <h2 class="section-title reveal">Specialist Therapy<br>Tailored to Your Child</h2>
+    </div>
+    <p class="section-desc reveal">
+      Whether your child is struggling with first words, unclear speech, stuttering, or social communication, we offer expert, compassionate support every step of the way.
+    </p>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="ph ph-baby"></i></div>
+      <div class="service-title">Early Language Development</div>
+      <div class="service-desc">Supporting babies, toddlers and young children with early communication skills — from babbling to first words and beyond.</div>
+      <div class="service-tags"><span class="service-tag">Ages 0–3</span><span class="service-tag">Early Intervention</span></div>
+      <a href="#contact" class="service-link">Learn more <i class="ph ph-arrow-right"></i></a>
+    </div>
+
+    <div class="service-card featured reveal">
+      <div class="service-icon"><i class="ph ph-chats"></i></div>
+      <div class="service-title">Speech Sound Difficulties</div>
+      <div class="service-desc">Helping children who are difficult to understand, mispronounce sounds, or whose speech clarity is affecting confidence and learning.</div>
+      <div class="service-tags"><span class="service-tag">Most Popular</span></div>
+      <a href="#contact" class="service-link">Learn more <i class="ph ph-arrow-right"></i></a>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="ph ph-lightning"></i></div>
+      <div class="service-title">Stammering &amp; Fluency</div>
+      <div class="service-desc">Specialist support for children who stammer, including therapy approaches like Lidcombe, Palin PCI, and smooth speech techniques.</div>
+      <div class="service-tags"><span class="service-tag">All Ages</span><span class="service-tag">Fluency</span></div>
+      <a href="#contact" class="service-link">Learn more <i class="ph ph-arrow-right"></i></a>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="ph ph-users-three"></i></div>
+      <div class="service-title">Social Communication</div>
+      <div class="service-desc">Supporting children with autism, ADHD, and social communication differences to build meaningful connections and social skills.</div>
+      <div class="service-tags"><span class="service-tag">Autism</span><span class="service-tag">ADHD</span></div>
+      <a href="#contact" class="service-link">Learn more <i class="ph ph-arrow-right"></i></a>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="ph ph-book-open"></i></div>
+      <div class="service-title">Language &amp; Literacy</div>
+      <div class="service-desc">Helping children with vocabulary, grammar, reading comprehension, and language processing difficulties that affect learning at school.</div>
+      <div class="service-tags"><span class="service-tag">School-Age</span><span class="service-tag">Literacy</span></div>
+      <a href="#contact" class="service-link">Learn more <i class="ph ph-arrow-right"></i></a>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="ph ph-fork-knife"></i></div>
+      <div class="service-title">Feeding &amp; Swallowing</div>
+      <div class="service-desc">Gentle, family-centred support for children with feeding difficulties, fussy eating, sensory food aversions, and swallowing concerns.</div>
+      <div class="service-tags"><span class="service-tag">All Ages</span><span class="service-tag">Feeding</span></div>
+      <a href="#contact" class="service-link">Learn more <i class="ph ph-arrow-right"></i></a>
+    </div>
+
+  </div>
+</section>
+
+<section id="why-choose-us" style="background: var(--white);">
+  <div class="text-center">
+    <div class="section-label reveal"><i class="ph ph-star"></i> Why Choose Little Voices</div>
+    <h2 class="section-title reveal">The Right Choice for<br>Your Child's Journey</h2>
+    <p class="section-desc reveal">We combine expertise, compassion, and evidence-based practice to deliver outstanding results for children and families.</p>
+  </div>
+
+  <div class="why-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 60px;">
+    <div class="why-card reveal">
+      <div class="why-icon" style="width: 70px; height: 70px; border-radius: 20px; background: var(--sage-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; font-size: 32px; color: var(--sage);">
+        <i class="ph ph-award"></i>
+      </div>
+      <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: var(--charcoal);">12+ Years Experience</h3>
+      <p style="font-size: .95rem; color: var(--muted); line-height: 1.7;">Specialist expertise in paediatric speech and language therapy with hundreds of successful outcomes.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon" style="width: 70px; height: 70px; border-radius: 20px; background: var(--terra-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; font-size: 32px; color: var(--terracotta);">
+        <i class="ph ph-heart"></i>
+      </div>
+      <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: var(--charcoal);">Child-Centred Approach</h3>
+      <p style="font-size: .95rem; color: var(--muted); line-height: 1.7;">Every session is tailored to your child's unique needs, interests, and learning style.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon" style="width: 70px; height: 70px; border-radius: 20px; background: var(--sage-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; font-size: 32px; color: var(--sage);">
+        <i class="ph ph-users-three"></i>
+      </div>
+      <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: var(--charcoal);">Family Involvement</h3>
+      <p style="font-size: .95rem; color: var(--muted); line-height: 1.7;">We work closely with parents and caregivers, providing guidance and support for home practice.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon" style="width: 70px; height: 70px; border-radius: 20px; background: var(--terra-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; font-size: 32px; color: var(--terracotta);">
+        <i class="ph ph-clock"></i>
+      </div>
+      <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: var(--charcoal);">Flexible Options</h3>
+      <p style="font-size: .95rem; color: var(--muted); line-height: 1.7;">In-clinic, home visits, school sessions, or online therapy - choose what works best for your family.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon" style="width: 70px; height: 70px; border-radius: 20px; background: var(--sage-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; font-size: 32px; color: var(--sage);">
+        <i class="ph ph-chart-line-up"></i>
+      </div>
+      <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: var(--charcoal);">Proven Results</h3>
+      <p style="font-size: .95rem; color: var(--muted); line-height: 1.7;">Evidence-based techniques that deliver measurable improvements in communication skills.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon" style="width: 70px; height: 70px; border-radius: 20px; background: var(--terra-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; font-size: 32px; color: var(--terracotta);">
+        <i class="ph ph-shield-check"></i>
+      </div>
+      <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: var(--charcoal);">Fully Qualified</h3>
+      <p style="font-size: .95rem; color: var(--muted); line-height: 1.7;">HCPC registered, RCSLT member, enhanced DBS checked and fully insured.</p>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="text-center">
+    <div class="section-label reveal"><i class="ph ph-path"></i> How It Works</div>
+    <h2 class="section-title reveal">Your Journey to Better<br>Communication Starts Here</h2>
+    <p class="section-desc reveal">A simple, supportive process designed to put you and your child at ease from day one.</p>
+  </div>
+
+  <div class="process-grid">
+    <div class="process-step reveal">
+      <div class="process-icon-wrap"><i class="ph ph-phone-call"></i></div>
+      <div class="process-step-title">Free Consultation</div>
+      <div class="process-step-desc">A no-obligation 15-minute call to discuss your concerns, answer your questions, and decide if we're the right fit.</div>
+    </div>
+    <div class="process-step reveal">
+      <div class="process-icon-wrap"><i class="ph ph-clipboard-text"></i></div>
+      <div class="process-step-title">Assessment</div>
+      <div class="process-step-desc">A thorough and child-friendly assessment to understand your child's communication profile and identify their needs.</div>
+    </div>
+    <div class="process-step reveal">
+      <div class="process-icon-wrap"><i class="ph ph-target"></i></div>
+      <div class="process-step-title">Personalised Plan</div>
+      <div class="process-step-desc">A bespoke therapy plan with clear goals, timescales, and home practice activities so you're always part of the process.</div>
+    </div>
+    <div class="process-step reveal">
+      <div class="process-icon-wrap"><i class="ph ph-star"></i></div>
+      <div class="process-step-title">Therapy &amp; Progress</div>
+      <div class="process-step-desc">Fun, engaging sessions with regular progress reviews. We celebrate every milestone — big and small.</div>
+    </div>
+  </div>
+</section>
+
+<section id="success-stories" style="background: var(--sage-pale);">
+  <div class="text-center">
+    <div class="section-label reveal"><i class="ph ph-trophy"></i> Success Stories</div>
+    <h2 class="section-title reveal">Transforming Young Lives<br>Through Communication</h2>
+    <p class="section-desc reveal">Real outcomes from real families who've experienced the Little Voices difference.</p>
+  </div>
+
+  <div class="success-stats" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin: 60px 0;">
+    <div class="stat-card reveal text-center" style="background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow);">
+      <div class="stat-number counter" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 700; color: var(--sage); margin-bottom: 8px;" data-target="500">0</div>
+      <div class="stat-label" style="font-size: .9rem; color: var(--muted);">Children Helped</div>
+    </div>
+    <div class="stat-card reveal text-center" style="background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow);">
+      <div class="stat-number counter" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 700; color: var(--terracotta); margin-bottom: 8px;" data-target="98">0</div>
+      <div class="stat-label" style="font-size: .9rem; color: var(--muted);">Parent Satisfaction</div>
+    </div>
+    <div class="stat-card reveal text-center" style="background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow);">
+      <div class="stat-number counter" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 700; color: var(--sage); margin-bottom: 8px;" data-target="12">0</div>
+      <div class="stat-label" style="font-size: .9rem; color: var(--muted);">Years Experience</div>
+    </div>
+    <div class="stat-card reveal text-center" style="background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow);">
+      <div class="stat-number" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 700; color: var(--terracotta); margin-bottom: 8px;">5.0</div>
+      <div class="stat-label" style="font-size: .9rem; color: var(--muted);">Google Rating</div>
+    </div>
+  </div>
+
+  <div class="success-cases" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+    <div class="case-card reveal" style="background: white; padding: 30px; border-radius: var(--radius-lg); box-shadow: var(--shadow);">
+      <div class="case-icon" style="width: 50px; height: 50px; border-radius: 15px; background: var(--sage-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; color: var(--sage);">
+        <i class="ph ph-baby"></i>
+      </div>
+      <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--charcoal);">First Words at 3 Years</h4>
+      <p style="font-size: .9rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px;">"Our son said his first complete sentences after just 8 weeks with Sarah. The progress has been incredible."</p>
+      <div style="font-size: .8rem; color: var(--sage); font-weight: 600;">— James & Emma, Parents of Leo, 3</div>
+    </div>
+
+    <div class="case-card reveal" style="background: white; padding: 30px; border-radius: var(--radius-lg); box-shadow: var(--shadow);">
+      <div class="case-icon" style="width: 50px; height: 50px; border-radius: 15px; background: var(--terra-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; color: var(--terracotta);">
+        <i class="ph ph-chats"></i>
+      </div>
+      <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--charcoal);">Clear Speech Confidence</h4>
+      <p style="font-size: .9rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px;">"My daughter went from being shy and hard to understand to confident and clear in just 6 months."</p>
+      <div style="font-size: .8rem; color: var(--terracotta); font-weight: 600;">— Sarah, Parent of Mia, 5</div>
+    </div>
+
+    <div class="case-card reveal" style="background: white; padding: 30px; border-radius: var(--radius-lg); box-shadow: var(--shadow);">
+      <div class="case-icon" style="width: 50px; height: 50px; border-radius: 15px; background: var(--sage-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; color: var(--sage);">
+        <i class="ph ph-lightning"></i>
+      </div>
+      <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--charcoal);">Fluent Speech Achieved</h4>
+      <p style="font-size: .9rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px;">"The stammering therapy techniques worked wonders. Our son speaks fluently and confidently now."</p>
+      <div style="font-size: .8rem; color: var(--sage); font-weight: 600;">— David & Rachel, Parents of Tom, 7</div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="text-center">
+    <div class="section-label reveal"><i class="ph ph-quotes"></i> Parent Reviews</div>
+    <h2 class="section-title reveal">Families Love Working<br>with Little Voices</h2>
+    <p class="section-desc reveal">Don't just take our word for it — here's what parents have to say about their experience.</p>
+  </div>
+
+  <div class="testimonials-grid">
+
+    <div class="testimonial-card reveal">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-quote-icon"><i class="ph ph-quotes"></i></div>
+      <p class="testimonial-text">"Sarah is absolutely wonderful. My 4-year-old went from barely speaking to chatting away in just a few months. I can't recommend Little Voices highly enough — truly life-changing for our family."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">
+          <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42.jpeg" alt="Emma" loading="lazy" />
+        </div>
+        <div>
+          <div class="testimonial-name">Emma R.</div>
+          <div class="testimonial-role">Parent of Jake, age 4</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card featured reveal">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-quote-icon"><i class="ph ph-quotes"></i></div>
+      <p class="testimonial-text">"From the very first session, I knew we were in safe hands. Sarah has a remarkable gift with children. She's warm, patient, and genuinely passionate. My son adores going to his sessions — which says it all!"</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">
+          <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-2.jpeg" alt="David" loading="lazy" />
+        </div>
+        <div>
+          <div class="testimonial-name">David &amp; Claire M.</div>
+          <div class="testimonial-role">Parents of Noah, age 6</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-quote-icon"><i class="ph ph-quotes"></i></div>
+      <p class="testimonial-text">"The online sessions were fantastic — so convenient and still incredibly effective. Sarah provided us with brilliant home activities and we saw real progress every single week."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">
+          <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-4.jpeg" alt="Sophie" loading="lazy" />
+        </div>
+        <div>
+          <div class="testimonial-name">Sophie L.</div>
+          <div class="testimonial-role">Parent of Lily, age 7</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="articles">
+  <div class="services-intro" style="margin-bottom:0">
+    <div>
+      <div class="section-label reveal"><i class="ph ph-article"></i> Resources &amp; Insights</div>
+      <h2 class="section-title reveal">Helpful Guides<br>for Parents</h2>
+    </div>
+    <div>
+      <p class="section-desc reveal">Our free resources help you understand your child's communication development and what you can do to support them at home.</p>
+    </div>
+  </div>
+
+  <div class="articles-grid">
+
+    <div class="article-card reveal">
+      <div class="article-img">
+        <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-5.jpeg" alt="Child playing and talking" loading="lazy" />
+      </div>
+      <div class="article-body">
+        <span class="article-category"><i class="ph ph-baby"></i> Development</span>
+        <h3 class="article-title">Speech &amp; Language Milestones: What to Expect at Every Age</h3>
+        <p class="article-excerpt">From cooing at 2 months to complex sentences at age 5 — a complete parent-friendly guide to communication milestones and when to seek help.</p>
+        <div class="article-meta">
+          <div class="article-date"><i class="ph ph-calendar"></i> 12 January 2026</div>
+          <a href="#" class="article-read-more">Read More <i class="ph ph-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card reveal">
+      <div class="article-img">
+        <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-6.jpeg" alt="Parent reading with child" loading="lazy" />
+      </div>
+      <div class="article-body">
+        <span class="article-category"><i class="ph ph-book-open"></i> Tips &amp; Advice</span>
+        <h3 class="article-title">10 Simple Ways to Boost Your Child's Language at Home Every Day</h3>
+        <p class="article-excerpt">You don't need special equipment or training — discover everyday activities and small habit changes that make a big difference to language development.</p>
+        <div class="article-meta">
+          <div class="article-date"><i class="ph ph-calendar"></i> 3 February 2026</div>
+          <a href="#" class="article-read-more">Read More <i class="ph ph-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card reveal">
+      <div class="article-img">
+        <img src="/images/WhatsApp Image 2026-02-17 at 17.21.42-2.jpeg" alt="Child with therapist" loading="lazy" />
+      </div>
+      <div class="article-body">
+        <span class="article-category"><i class="ph ph-question"></i> Guide</span>
+        <h3 class="article-title">Is My Child's Stammer Normal? What Every Parent Should Know</h3>
+        <p class="article-excerpt">Many children go through phases of non-fluency. Learn the difference between typical disfluency and stammering that needs specialist support.</p>
+        <div class="article-meta">
+          <div class="article-date"><i class="ph ph-calendar"></i> 18 March 2026</div>
+          <a href="#" class="article-read-more">Read More <i class="ph ph-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="faq">
+  <div class="text-center" style="margin-bottom:0">
+    <div class="section-label reveal"><i class="ph ph-question"></i> FAQ</div>
+    <h2 class="section-title reveal">Questions We Get Asked<br>All the Time</h2>
+    <p class="section-desc reveal">If you can't find the answer you're looking for, please don't hesitate to get in touch — we're happy to help.</p>
+  </div>
+
+  <div class="faq-grid" style="margin-top:50px">
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How do I know if my child needs a speech therapist?
+        <i class="ph ph-caret-down"></i>
+      </button>
+      <div class="faq-answer">If your child isn't meeting typical speech and language milestones, is difficult to understand, avoids talking, or shows signs of frustration when communicating, it's worth seeking advice. Early intervention is always best, and an assessment will give you clarity — even if everything turns out to be fine.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How long will my child need therapy?
+        <i class="ph ph-caret-down"></i>
+      </button>
+      <div class="faq-answer">This varies enormously depending on the nature and severity of your child's difficulties. Some children benefit from a short block of 6–8 sessions; others may need longer-term support. We'll give you a clear indication after the initial assessment and review progress regularly.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Do you offer online sessions?
+        <i class="ph ph-caret-down"></i>
+      </button>
+      <div class="faq-answer">Yes! We offer secure video sessions via a GDPR-compliant platform. Online therapy is highly effective for most children and allows us to work with families all over the UK. It's also a brilliant option if your child finds in-person therapy tricky at first.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Can I get a referral through the NHS?
+        <i class="ph ph-caret-down"></i>
+      </button>
+      <div class="faq-answer">Yes — you can ask your GP or health visitor for an NHS referral. However, NHS waiting times can be significant. Many families choose private therapy for faster access to assessment and therapy, while waiting for NHS services or in addition to them.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How much do sessions cost?
+        <i class="ph ph-caret-down"></i>
+      </button>
+      <div class="faq-answer">Assessment sessions are £150 and include a written report with recommendations. Therapy sessions are £90 per 50-minute session. Block bookings of 6+ sessions receive a 10% discount. Your free initial consultation will help you understand what's right for your child before any commitment.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Do parents need to attend sessions?
+        <i class="ph ph-caret-down"></i>
+      </button>
+      <div class="faq-answer">For younger children (under 5), parents are integral to sessions — your involvement makes a huge difference to progress. For older children we'll find the right balance. We also provide detailed home practice guidance after every session so you can continue the great work at home.</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <div class="section-label reveal"><i class="ph ph-envelope"></i> Get In Touch</div>
+      <h2 class="section-title reveal">Let's Start Your<br>Child's Journey Today</h2>
+      <p class="section-desc reveal">
+        Book a free 15-minute consultation and let's talk about how we can help your child find their voice. There's no obligation — just a friendly, honest conversation.
+      </p>
+
+      <div class="contact-details">
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="ph ph-phone"></i></div>
+          <div class="contact-item-text">
+            <strong>Call Us</strong>
+            <span><a href="tel:+441234567890">+44 (0) 1234 567 890</a></span>
+            <span style="font-size: 0.75rem; color: var(--sage);">Mon-Fri: 8:30am-6pm, Sat: 9am-1pm</span>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="ph ph-envelope"></i></div>
+          <div class="contact-item-text">
+            <strong>Email Us</strong>
+            <span><a href="mailto:hello@littlevoices-slt.com">hello@littlevoices-slt.com</a></span>
+            <span style="font-size: 0.75rem; color: var(--sage);">Response within 24 hours</span>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="ph ph-map-pin"></i></div>
+          <div class="contact-item-text">
+            <strong>Our Clinic</strong>
+            <span>42 Meadow Lane, Harrogate, HG1 2AB</span>
+            <span style="font-size: 0.75rem; color: var(--sage);">Free parking available</span>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="ph ph-whatsapp-logo"></i></div>
+          <div class="contact-item-text">
+            <strong>WhatsApp</strong>
+            <span><a href="https://wa.me/441234567890" target="_blank">+44 (0) 1234 567 890</a></span>
+            <span style="font-size: 0.75rem; color: var(--sage);">Quick responses</span>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="ph ph-video-camera"></i></div>
+          <div class="contact-item-text">
+            <strong>Online Sessions</strong>
+            <span><a href="#contact" onclick="window.open('https://calendly.com/your-therapist', '_blank')">Book Online Consultation</a></span>
+            <span style="font-size: 0.75rem; color: var(--sage);">Secure video platform</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="trust-badges" style="margin-top: 40px; display: flex; gap: 20px; flex-wrap: wrap;">
+        <div class="trust-badge reveal" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(10px);">
+          <i class="ph ph-shield-check" style="font-size: 24px; color: white;"></i>
+          <div>
+            <div style="font-size: 0.85rem; font-weight: 600; color: white;">HCPC Registered</div>
+            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.8);">Fully Qualified</div>
+          </div>
+        </div>
+        <div class="trust-badge reveal" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(10px);">
+          <i class="ph ph-certificate" style="font-size: 24px; color: white;"></i>
+          <div>
+            <div style="font-size: 0.85rem; font-weight: 600; color: white;">RCSLT Member</div>
+            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.8);">Professional Body</div>
+          </div>
+        </div>
+        <div class="trust-badge reveal" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(10px);">
+          <i class="ph ph-lock" style="font-size: 24px; color: white;"></i>
+          <div>
+            <div style="font-size: 0.85rem; font-weight: 600; color: white;">DBS Checked</div>
+            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.8);">Enhanced Disclosure</div>
+          </div>
+        </div>
+        <div class="trust-badge reveal" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(10px);">
+          <i class="ph ph-shield-star" style="font-size: 24px; color: white;"></i>
+          <div>
+            <div style="font-size: 0.85rem; font-weight: 600; color: white;">Fully Insured</div>
+            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.8);">Professional Indemnity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap reveal">
+      <div class="form-title">Book Your Free Consultation</div>
+      <form action="send-email.php" method="POST" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Your Name *</label>
+            <input type="text" name="name" class="form-input" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" name="phone" class="form-input" placeholder="+44 7700 000000" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" name="email" class="form-input" placeholder="jane@email.com" required />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Child's Age</label>
+            <select name="child_age" class="form-select">
+              <option value="">Select age range</option>
+              <option value="0–1 years">0–1 years</option>
+              <option value="1–3 years">1–3 years</option>
+              <option value="3–5 years">3–5 years</option>
+              <option value="5–8 years">5–8 years</option>
+              <option value="8–12 years">8–12 years</option>
+              <option value="12–18 years">12–18 years</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Area of Concern</label>
+            <select name="concerns" class="form-select">
+              <option value="">Select concern</option>
+              <option value="Speech Sounds">Speech Sounds</option>
+              <option value="Language Development">Language Development</option>
+              <option value="Stammering / Fluency">Stammering / Fluency</option>
+              <option value="Social Communication">Social Communication</option>
+              <option value="Feeding Difficulties">Feeding Difficulties</option>
+              <option value="Not Sure / Other">Not Sure / Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tell Us a Bit More (Optional)</label>
+          <textarea name="message" class="form-textarea" placeholder="Share anything that would help us prepare for your consultation..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          <i class="ph ph-paper-plane-tilt"></i> Send My Enquiry — It's Free!
+        </button>
+      </form>
+      <p style="font-size:.78rem;color:var(--muted);margin-top:14px;text-align:center">🔒 Your information is safe with us. We'll never share your data.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-icon"><i class="ph ph-chats-circle"></i></div>
+        <div class="footer-logo-name">Little Voices</div>
+      </div>
+      <p class="footer-desc">Expert, compassionate speech and language therapy for children and families. Every child deserves to find their voice.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+        <a href="#" class="footer-social" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="#" class="footer-social" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="#" class="footer-social" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#services">Early Language</a></li>
+        <li><a href="#services">Speech Sounds</a></li>
+        <li><a href="#services">Stammering</a></li>
+        <li><a href="#services">Social Communication</a></li>
+        <li><a href="#services">Feeding Therapy</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Information</div>
+      <ul class="footer-links">
+        <li><a href="#about">About Sarah</a></li>
+        <li><a href="#process">How It Works</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#articles">Resources</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:+441234567890">+44 (0) 1234 567 890</a></li>
+        <li><a href="mailto:hello@littlevoices-slt.com">hello@littlevoices-slt.com</a></li>
+        <li><a href="#">Book a Consultation</a></li>
+        <li><a href="#">42 Meadow Lane</a></li>
+        <li><a href="#">Harrogate, HG1 2AB</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Little Voices Speech & Language Therapy. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Accessibility</a>
+    </div>
+  </div>
+</footer>
+
+<div class="chatbot-container">
+  <button class="chatbot-toggle" id="chatbotToggle" aria-label="Chat with us">
+    <i class="ph ph-chats-circle"></i>
+  </button>
+  
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-title">Little Voices Assistant</div>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">
+        <i class="ph ph-x"></i>
+      </button>
+    </div>
+    
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chat-message bot-message">
+        Hello! I'm here to help you learn about our speech and language therapy services. How can I assist you today?
+      </div>
+      <div class="quick-replies">
+        <button class="quick-reply" onclick="sendQuickReply('Tell me about your services')">Services Overview</button>
+        <button class="quick-reply" onclick="sendQuickReply('How do I know if my child needs therapy?')">Signs to Look For</button>
+        <button class="quick-reply" onclick="sendQuickReply('What are your fees?')">Pricing Information</button>
+        <button class="quick-reply" onclick="sendQuickReply('Book a consultation')">Book Consultation</button>
+      </div>
+    </div>
+    
+    <div class="chatbot-input-container">
+      <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message..." />
+      <button class="chatbot-send" id="chatbotSend" aria-label="Send message">
+        <i class="ph ph-paper-plane-tilt"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<a href="#hero" style="position:fixed;bottom:28px;right:28px;z-index:50;
+   width:48px;height:48px;border-radius:50%;background:var(--sage);color:white;
+   display:flex;align-items:center;justify-content:center;font-size:22px;
+   box-shadow:0 4px 18px rgba(122,158,126,.4);text-decoration:none;
+   transition:transform .2s,box-shadow .2s;" id="backTop"
+   onmouseover="this.style.transform='translateY(-3px)'"
+   onmouseout="this.style.transform=''"
+   aria-label="Back to top">
+  <i class="ph ph-arrow-up"></i>
+</a>
+<script>
+
+  // Nav scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  // FAQ
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => obs.observe(el));
+
+  // Form
+  function handleSubmit(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const formData = new FormData(form);
+    const btn = form.querySelector('.form-submit');
+    const originalText = btn.innerHTML;
+    
+    // Show loading state
+    btn.innerHTML = '<i class="ph ph-spinner"></i> Sending...';
+    btn.disabled = true;
+    
+    // Send form data via AJAX
+    fetch('send-email.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        btn.innerHTML = '<i class="ph ph-check-circle"></i> ' + data.message;
+        btn.style.background = 'var(--sage)';
+        form.reset();
+      } else {
+        btn.innerHTML = '<i class="ph ph-warning-circle"></i> ' + data.message;
+        btn.style.background = '#e74c3c';
+        // Re-enable form after error
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      btn.innerHTML = '<i class="ph ph-warning-circle"></i> Sorry, there was an error. Please try again.';
+      btn.style.background = '#e74c3c';
+      // Re-enable form after error
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    });
+  }
+
+  // Chatbot functionality
+  const chatbotToggle = document.getElementById('chatbotToggle');
+  const chatbotWindow = document.getElementById('chatbotWindow');
+  const chatbotClose = document.getElementById('chatbotClose');
+  const chatbotInput = document.getElementById('chatbotInput');
+  const chatbotSend = document.getElementById('chatbotSend');
+  const chatbotMessages = document.getElementById('chatbotMessages');
+
+  chatbotToggle.addEventListener('click', () => {
+    chatbotWindow.classList.toggle('active');
+  });
+
+  chatbotClose.addEventListener('click', () => {
+    chatbotWindow.classList.remove('active');
+  });
+
+  function addMessage(message, isUser = false) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `chat-message ${isUser ? 'user-message' : 'bot-message'}`;
+    messageDiv.textContent = message;
+    chatbotMessages.appendChild(messageDiv);
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  }
+
+  function addQuickReplies(replies) {
+    const quickRepliesDiv = document.createElement('div');
+    quickRepliesDiv.className = 'quick-replies';
+    replies.forEach(reply => {
+      const button = document.createElement('button');
+      button.className = 'quick-reply';
+      button.textContent = reply.text;
+      button.onclick = () => sendQuickReply(reply.text);
+      quickRepliesDiv.appendChild(button);
+    });
+    chatbotMessages.appendChild(quickRepliesDiv);
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  }
+
+  function sendQuickReply(text) {
+    addMessage(text, true);
+    setTimeout(() => generateBotResponse(text), 800);
+  }
+
+  function generateBotResponse(userMessage) {
+    const lowerMessage = userMessage.toLowerCase();
+    
+    let response = '';
+    let quickReplies = [];
+    
+    if (lowerMessage.includes('service') || lowerMessage.includes('offer') || lowerMessage.includes('help')) {
+      response = "We offer specialist speech and language therapy for children including: Early Language Development, Speech Sound Difficulties, Stammering & Fluency, Social Communication, Language & Literacy, and Feeding & Swallowing support. Each program is tailored to your child's unique needs.";
+      quickReplies = [
+        { text: "Early Language Development" },
+        { text: "Speech Sound Difficulties" },
+        { text: "Stammering Support" },
+        { text: "Book a consultation" }
+      ];
+    } else if (lowerMessage.includes('sign') || lowerMessage.includes('need') || lowerMessage.includes('concern')) {
+      response = "Common signs that a child may need speech therapy include: difficulty being understood by others, limited vocabulary for their age, stuttering or hesitations, frustration when communicating, difficulty following instructions, or delays in reaching speech milestones. Early intervention is always best!";
+      quickReplies = [
+        { text: "Developmental milestones" },
+        { text: "Book assessment" },
+        { text: "Free consultation" }
+      ];
+    } else if (lowerMessage.includes('fee') || lowerMessage.includes('cost') || lowerMessage.includes('price')) {
+      response = "Assessment sessions are £150 and include a written report. Therapy sessions are £90 per 50-minute session. We offer a 10% discount for block bookings of 6+ sessions. Your free initial consultation will help determine the best approach for your child.";
+      quickReplies = [
+        { text: "Book free consultation" },
+        { text: "Payment options" },
+        { text: "Insurance coverage" }
+      ];
+    } else if (lowerMessage.includes('book') || lowerMessage.includes('appointment') || lowerMessage.includes('consultation')) {
+      response = "I'd be happy to help you book a free 15-minute consultation! You can call us at +44 (0) 1234 567 890, email hello@littlevoices-slt.com, or fill out the contact form at the bottom of this page. We'll get back to you within 24 hours.";
+      quickReplies = [
+        { text: "Go to contact form" },
+        { text: "Call now" },
+        { text: "Email us" }
+      ];
+    } else if (lowerMessage.includes('age') || lowerMessage.includes('old')) {
+      response = "We work with children from birth to 18 years old. Our services are age-appropriate and tailored to each developmental stage, from early intervention for babies to support for teenagers with communication challenges.";
+      quickReplies = [
+        { text: "Early years (0-5)" },
+        { text: "School age (6-12)" },
+        { text: "Teenagers (13-18)" }
+      ];
+    } else if (lowerMessage.includes('online') || lowerMessage.includes('video') || lowerMessage.includes('virtual')) {
+      response = "Yes! We offer secure online therapy sessions via a GDPR-compliant platform. Online therapy is highly effective and allows us to work with families across the UK. It's perfect if you have mobility challenges, live far from our clinic, or prefer the convenience of home-based sessions.";
+      quickReplies = [
+        { text: "How online therapy works" },
+        { text: "Technical requirements" },
+        { text: "Book online session" }
+      ];
+    } else {
+      response = "I'm here to help with information about our speech and language therapy services. You can ask me about our programs, pricing, booking appointments, or signs that might indicate your child needs support. What would you like to know more about?";
+      quickReplies = [
+        { text: "Tell me about services" },
+        { text: "Pricing information" },
+        { text: "Book consultation" },
+        { text: "Signs to look for" }
+      ];
+    }
+    
+    addMessage(response);
+    if (quickReplies.length > 0) {
+      setTimeout(() => addQuickReplies(quickReplies), 500);
+    }
+  }
+
+  function sendMessage() {
+    const message = chatbotInput.value.trim();
+    if (message) {
+      addMessage(message, true);
+      chatbotInput.value = '';
+      setTimeout(() => generateBotResponse(message), 800);
+    }
+  }
+
+  chatbotSend.addEventListener('click', sendMessage);
+  chatbotInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+  });
+
+  // Counter animation
+  function animateCounters() {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // Animation speed
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const increment = target / speed;
+      
+      const updateCount = () => {
+        const count = +counter.innerText;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 1);
+        } else {
+          counter.innerText = target + (counter.getAttribute('data-target') === '500' ? '+' : 
+                           counter.getAttribute('data-target') === '98' ? '%' : 
+                           counter.getAttribute('data-target') === '12' ? '+' : '');
+        }
+      };
+      updateCount();
+    });
+  }
+
+  // Lazy loading for images
+  function lazyLoadImages() {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.classList.add('loaded');
+          observer.unobserve(img);
+        }
+      });
+    });
+
+    images.forEach(img => imageObserver.observe(img));
+  }
+
+  // Initialize animations when elements are visible
+  const successObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+        animateCounters();
+        entry.target.classList.add('animated');
+      }
+    });
+  }, { threshold: 0.5 });
+
+  const successStats = document.querySelector('.success-stats');
+  if (successStats) {
+    successObserver.observe(successStats);
+  }
+
+  // Initialize lazy loading
+  lazyLoadImages();
+
+  // Add smooth scroll behavior
+  document.documentElement.classList.add('smooth-scroll');
+
+</script>
+</body>
+</html>
